@@ -1,0 +1,110 @@
+.heading {
+    margin-top: 2vmax;
+
+    text-align: center;
+    color: #6c7ac9;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.heading > span {
+    font-size: 1vmax;
+    margin:0 2vmax;
+    float:right;
+}
+.heading > span:hover {
+    border-bottom:1px solid black;
+}
+.dataInputField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1.2vmax 0;
+    font-size: 18px;
+}
+.dataInputField > div {
+    padding: 2vmax 1vmax;
+}
+
+.dropdownMenu > select {
+    font-size: 1.5vmax;
+    padding: 1vmax;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.searchInput > input {
+    padding: 1vmax;
+    font-size: 1.3vmax;
+    width: 50vw;
+}
+
+.branches {
+    text-align: center;
+    margin: 0 2vmax;
+}
+.branches > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.branches > div > select {
+  border: 1px solid #ccc;
+    border-radius: 6px;
+    margin:0.8vmax;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    padding:2.7vmax 0;
+}
+
+.pagination > li {
+  margin:0 0.4vmax;
+}
+
+.pagination a {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #6c7ac9;
+    color: #6c7ac9;
+}
+
+.pagination__link {
+    font-weight: bold;
+}
+
+.pagination__link--active a {
+    color: #fff;
+    background: #6c7ac9;
+}
+
+.pagination__link--disabled a {
+    color: rgb(198, 197, 202);
+    border: 1px solid rgb(198, 197, 202);
+}
