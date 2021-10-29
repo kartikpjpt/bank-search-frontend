@@ -1,9 +1,15 @@
 .heading {
-    margin-top: 2vmax;
-
+    padding-top: 2vmax;
+    
     text-align: center;
-    color: #6c7ac9;
+    color: #f1f1f1;
     font-family: sans-serif;
+}
+.top-container {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:white;
 }
 a {
     text-decoration: none;
@@ -14,7 +20,7 @@ a {
     float:right;
 }
 .heading > span:hover {
-    border-bottom:1px solid black;
+    border-bottom:1px solid white;
 }
 .dataInputField {
     display: flex;
@@ -31,7 +37,8 @@ a {
 .dropdownMenu > select {
     font-size: 1.5vmax;
     padding: 1vmax;
-    background: transparent;
+    background: #29274F;
+    color:white;
     border: 1px solid #ccc;
     border-radius: 6px;
 }
@@ -49,16 +56,21 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .branches > div > select {
   border: 1px solid #ccc;
     border-radius: 6px;
-    margin:0.8vmax;
+    margin:1vmax;
+    padding:0.4vmax;
+    font-size: 0.9vmax;
 }
 table {
+    color:white;
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
+    margin:2vmax auto;
 }
 
 td,
@@ -69,7 +81,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: hsla(315, 48%, 51%, 0.534);
 }
 
 .pagination-container {
@@ -83,7 +95,9 @@ tr:nth-child(even) {
     cursor: pointer;
     padding:2.7vmax 0;
 }
-
+.pagination > ul {
+    align-items: center;
+}
 .pagination > li {
   margin:0 0.4vmax;
 }
@@ -91,8 +105,8 @@ tr:nth-child(even) {
 .pagination a {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #6c7ac9;
-    color: #6c7ac9;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .pagination__link {

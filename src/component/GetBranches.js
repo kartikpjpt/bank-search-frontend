@@ -12,14 +12,16 @@ const GetBranches = () => {
 
     //fetching the api data using axios
     const getBranchData = async (cityName) => {
+        
         try {
-            const response = await axios.get(
-                `https://vast-shore-74260.herokuapp.com/banks`,
-                {
-                    params: { city: cityName },
-                }
-            );
-            setBranchData(response);
+                const response = await axios.get(
+                    `https://vast-shore-74260.herokuapp.com/banks`,
+                    {
+                        params: { city: cityName },
+                    }
+                );
+                setBranchData(response);
+            
         } catch (error) {
             console.log(error);
         }
@@ -27,12 +29,7 @@ const GetBranches = () => {
 
     //destructing the data field from the response api
     const { data } = branchData;
-    if (data && data.length > 0) {
-        localStorage.setItem("apiCall", JSON.stringify(data));
-    }
-
-    
-
+       
     //Using react-paginate for pagination
     //Pagination
     const [perPage, setPerPage] = useState(10);
@@ -78,6 +75,7 @@ const GetBranches = () => {
 
     return (
         <div className="hero">
+        <div className="top-container">
             <h1 className="heading">
                 Bank Branches
 
@@ -126,7 +124,7 @@ const GetBranches = () => {
                         <option value="200">200</option>
                     </select>
                 </div>
-
+        </div>
                 <table>
                     <tr>
                         
